@@ -20,8 +20,8 @@ export default function MenuSuperior({proporcional}) {
     const [submenu_opcion, setSubMenuOpcion] = useState('')
 
     return (
-        <div className='position-fixed top-0' style={{width: 1620 / proporcional, height: 75 / proporcional, paddingTop: 10 / proporcional, paddingBottom: 10 / proporcional, 
-            paddingLeft: 30 / proporcional, paddingRight: 30 / proporcional, borderBottom: '1px solid rgb(236, 236, 236)', left: '16%'}}>
+        <div className='' style={{width: '100%', height: 75 / proporcional, paddingTop: 10 / proporcional, paddingBottom: 10 / proporcional, 
+            paddingLeft: 30 / proporcional, paddingRight: 30 / proporcional, borderBottom: '1px solid rgb(236, 236, 236)'}}>
             <div className='d-flex justify-content-between' style={{width: '100%', height: 54 / proporcional}}>
                 <div style={{width: '50%', height: 54 / proporcional}}>
                     <div className='d-flex justify-content-start' style={{width: 300 / proporcional, height: 54 / proporcional, paddingTop: 10.5 / proporcional, paddingBottom: 10.5 / proporcional}}>

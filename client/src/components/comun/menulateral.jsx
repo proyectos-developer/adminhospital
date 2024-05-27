@@ -46,8 +46,11 @@ import icono_blog_green from '../../assets/iconos/icono_blog_green_96.png'
 import icono_blog_black from '../../assets/iconos/icono_blog_black_96.png'
 import icono_social_green from '../../assets/iconos/icono_social_green_96.png'
 import icono_social_black from '../../assets/iconos/icono_social_black_96.png'
+import { useNavigate } from 'react-router-dom'
 
 export default function MenuLateral({proporcional}) {
+
+    const navigate = useNavigate()
 
     const [down_perfil, setDownPerfil] = useState(false)
     const [seleccion_menu, setSeleccionMenu] = useState ('')
@@ -154,7 +157,8 @@ export default function MenuLateral({proporcional}) {
                             </div>
                             <div className='d-flex justify-content-between' 
                                 style={{width: 260 / proporcional, height: 38.5 / proporcional, paddingTop: 8 / proporcional, paddingBottom: 8 / proporcional, paddingLeft: 15 / proporcional, 
-                                        paddingRight: 15 / proporcional, cursor: 'pointer'}} onMouseOver={() => setSeleccionMenu('doctores')} onMouseLeave={() => setSeleccionMenu('')}>
+                                        paddingRight: 15 / proporcional, cursor: 'pointer'}} onMouseOver={() => setSeleccionMenu('doctores')} onMouseLeave={() => setSeleccionMenu('')}
+                                        onClick={() => setMenuOpciones(menu_opciones === 'doctores' ? '' : 'doctores')}>
                                 <p style={{fontSize: 16 / proporcional, lineHeight: `${22.5 / proporcional}px`, fontWeight: 500, fontFamily: 'Nunito, sans-serif', 
                                             color: (seleccion_menu === 'doctores' || menu_opciones === 'doctores') ? 'rgb(130, 180, 64)' : 'black', textAlign: 'left', marginBottom: 0}}>
                                     Doctores
@@ -163,12 +167,10 @@ export default function MenuLateral({proporcional}) {
                                     {
                                         menu_opciones === 'doctores' ? (
                                             <img className='' src={icono_minus_green} 
-                                                    style={{width: 22.5 / proporcional, height: 22.5 / proporcional, padding: 3.25 / proporcional}}
-                                                    onClick={() => setMenuOpciones('')}/>
+                                                    style={{width: 22.5 / proporcional, height: 22.5 / proporcional, padding: 3.25 / proporcional}}/>
                                         ) : (
                                             <img className='' src={seleccion_menu === 'doctores' ? icono_plus_green : icono_plus_black} 
-                                                    style={{width: 22.5 / proporcional, height: 22.5 / proporcional, padding: 3.25 / proporcional}}
-                                                    onClick={() => setMenuOpciones('doctores')}/>
+                                                    style={{width: 22.5 / proporcional, height: 22.5 / proporcional, padding: 3.25 / proporcional}}/>
                                         )
                                     }
                                     <img className='' src={(seleccion_menu === 'doctores' || menu_opciones === 'doctores') ? icono_doctors_green : icono_doctors_black} 
@@ -189,7 +191,8 @@ export default function MenuLateral({proporcional}) {
                                         </div>
                                         <div style={{width: '100%', height: 34.5 / proporcional, paddingTop: 6 / proporcional, paddingBottom: 6 / proporcional, paddingLeft: 47 / proporcional, 
                                                 paddingRight: 15 / proporcional}}
-                                                onMouseOver={() => setSeleccionSubmenu('agregar-doctor')} onMouseLeave={() => setSeleccionSubmenu('')}>
+                                                onMouseOver={() => setSeleccionSubmenu('agregar-doctor')} onMouseLeave={() => setSeleccionSubmenu('')}
+                                                onClick={() => navigate ('/doctores/nuevo-doctor')}>
                                             <p style={{fontSize: 16 / proporcional, lineHeight: `${22.5 / proporcional}px`, fontWeight: 500, fontFamily: 'Nunito, sans-serif', 
                                                         cursor: 'pointer', color: seleccion_submenu === 'agregar-doctor' ? 'rgb(130, 180, 64)' : 'rgb(51, 51, 51)', 
                                                         textAlign: 'left', marginBottom: 0}}>
