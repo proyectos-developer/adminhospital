@@ -54,7 +54,7 @@ export default function BarraTitulo({proporcional}) {
                                             fontFamily: 'Nunito, sans-serif'}}>214</h4>
                             </div>
                             <button className='btn shadow' style={{width: 100 / proporcional, height: 35 / proporcional, background: 'rgb(32, 34, 35)', color: 'rgb(238, 238, 238)',
-                                    fontSize: 14 / proporcional, fontWeight: 300}} onClick={() => navigate ('/doctores')}>
+                                    fontSize: 14 / proporcional, fontWeight: 300}} onClick={() => navigate ('/doctores/nuevo')}>
                                 Nuevo
                             </button>
                         </div>

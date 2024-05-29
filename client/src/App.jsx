@@ -23,6 +23,10 @@ import NuevoDoctor from './components/doctores/nuevo.jsx'
 import NuevoDoctorTablet from './components/doctores/nuevotablet.jsx'
 import NuevoDoctorCell from './components/doctores/nuevocell.jsx'
 
+import AgendaDoctores from './components/doctores/agenda.jsx'
+import AgendaDoctoresTablet from './components/doctores/agendatablet.jsx'
+import AgendaDoctoresCell from './components/doctores/agendacell.jsx'
+
 export default function App() {
     const [width, setWidth] = useState (window.outerWidth)
 
@@ -57,9 +61,13 @@ export default function App() {
                                                           width < 991 ? <DoctorTablet proporcional={991 / width}/> : 
                                                                         <Doctor       proporcional={1920 / width} />}/>
                                                                   
-                    <Route path='nuevo-doctor' element={width < 500 ? <NuevoDoctorCell   proporcional={499 / width}/> : 
-                                                        width < 991 ? <NuevoDoctorTablet proporcional={991 / width}/> : 
-                                                                      <NuevoDoctor       proporcional={1920 / width} />}/>
+                    <Route path='nuevo' element={width < 500 ? <NuevoDoctorCell   proporcional={499 / width}/> : 
+                                                 width < 991 ? <NuevoDoctorTablet proporcional={991 / width}/> : 
+                                                               <NuevoDoctor       proporcional={1920 / width} />}/>
+                                                                  
+                    <Route path='agenda' element={width < 500 ? <AgendaDoctoresCell   proporcional={499 / width}/> : 
+                                                  width < 991 ? <AgendaDoctoresTablet proporcional={991 / width}/> : 
+                                                                <AgendaDoctores       proporcional={1920 / width} />}/>
 
                   </Route>
               </Route>

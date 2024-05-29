@@ -193,7 +193,7 @@ export default function MenuLateral({proporcional}) {
                                         <div style={{width: '100%', height: 34.5 / proporcional, paddingTop: 6 / proporcional, paddingBottom: 6 / proporcional, paddingLeft: 47 / proporcional, 
                                                 paddingRight: 15 / proporcional}}
                                                 onMouseOver={() => setSeleccionSubmenu('agregar-doctor')} onMouseLeave={() => setSeleccionSubmenu('')}
-                                                onClick={() => navigate ('/doctores/nuevo-doctor')}>
+                                                onClick={() => navigate ('/doctores/nuevo')}>
                                             <p style={{fontSize: 16 / proporcional, lineHeight: `${22.5 / proporcional}px`, fontWeight: 500, fontFamily: 'Nunito, sans-serif', 
                                                         cursor: 'pointer', color: seleccion_submenu === 'agregar-doctor' ? 'rgb(130, 180, 64)' : 'rgb(51, 51, 51)', 
                                                         textAlign: 'left', marginBottom: 0}}>
@@ -211,7 +211,8 @@ export default function MenuLateral({proporcional}) {
                                         </div>
                                         <div style={{width: '100%', height: 34.5 / proporcional, paddingTop: 6 / proporcional, paddingBottom: 6 / proporcional, paddingLeft: 47 / proporcional, 
                                                 paddingRight: 15 / proporcional}}
-                                                onMouseOver={() => setSeleccionSubmenu('agenda-doctores')} onMouseLeave={() => setSeleccionSubmenu('')}>
+                                                onMouseOver={() => setSeleccionSubmenu('agenda-doctores')} onMouseLeave={() => setSeleccionSubmenu('')}
+                                                onClick={() => navigate('/doctores/agenda')}>
                                             <p style={{fontSize: 16 / proporcional, lineHeight: `${22.5 / proporcional}px`, fontWeight: 500, fontFamily: 'Nunito, sans-serif', 
                                                         cursor: 'pointer', color: seleccion_submenu === 'agenda-doctores' ? 'rgb(130, 180, 64)' : 'rgb(51, 51, 51)', 
                                                         textAlign: 'left', marginBottom: 0}}>
