@@ -6,10 +6,14 @@ import {Provider} from 'react-redux'
 import {configureStore, getDefaultMiddleware} from '@reduxjs/toolkit'
 
 import data from './redux/reducers/data.js'
+import doctoresdata from './redux/slice/doctoresdata'
+import begindata from './redux/slice/begindata'
 
 const store = configureStore ({
     reducer: ({
-        data_actions: data
+        data_actions: data,
+        doctores_data: doctoresdata,
+        begin_data: begindata
     }),
     middleware: (getDefaultMiddleware) => getDefaultMiddleware({
       immutableCheck: false,

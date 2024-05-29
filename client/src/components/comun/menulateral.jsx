@@ -182,7 +182,8 @@ export default function MenuLateral({proporcional}) {
                                     <div style={{width: '100%', height: 'auto'}}>
                                         <div style={{width: '100%', height: 34.5 / proporcional, paddingTop: 6 / proporcional, paddingBottom: 6 / proporcional, paddingLeft: 47 / proporcional, 
                                                 paddingRight: 15 / proporcional}}
-                                                onMouseOver={() => setSeleccionSubmenu('todos-doctores')} onMouseLeave={() => setSeleccionSubmenu('')}>
+                                                onMouseOver={() => setSeleccionSubmenu('todos-doctores')} onMouseLeave={() => setSeleccionSubmenu('')}
+                                                onClick={() => navigate ('/doctores')}>
                                             <p style={{fontSize: 16 / proporcional, lineHeight: `${22.5 / proporcional}px`, fontWeight: 500, fontFamily: 'Nunito, sans-serif', 
                                                         cursor: 'pointer', color: seleccion_submenu === 'todos-doctores' ? 'rgb(130, 180, 64)' : 'rgb(51, 51, 51)', 
                                                         textAlign: 'left', marginBottom: 0}}>

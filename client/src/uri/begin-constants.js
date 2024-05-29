@@ -10,7 +10,7 @@ export const beginConstants = (data = {}, reset = false, id = 0) => {
             data: data
         },
         register_user: {
-            path: `signup`,
+            path: `doctor/signup`,
             stateType: 'register_user',
             data: data,
             reset: reset
