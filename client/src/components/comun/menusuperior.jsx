@@ -18,7 +18,7 @@ export default function MenuSuperior({proporcional}) {
     const [mouse_submenu, setMouseSubmenu] = useState ('')
     const [search, setSearch] = useState('')
     const [submenu_opcion, setSubMenuOpcion] = useState('')
-
+ 
     return (
         <div className='' style={{width: '100%', height: 75 / proporcional, paddingTop: 10 / proporcional, paddingBottom: 10 / proporcional, 
             paddingLeft: 30 / proporcional, paddingRight: 30 / proporcional, borderBottom: '1px solid rgb(236, 236, 236)'}}>
@@ -241,11 +241,11 @@ export default function MenuSuperior({proporcional}) {
                                             <div style={{width: 300 / proporcional, height: 'auto'/ proporcional, background: 'white'}}>
                                                 <div style={{width: 300 / proporcional, height: 'auto'/ proporcional, paddingLeft: 20 / proporcional, paddingRight: 20 / proporcional,
                                                         paddingTop: 13 / proporcional, paddingBottom: 13 / proporcional}}>
-                                                    <div className='d-flex' style={{width: 260 / proporcional, height: 'auto' / proporcional, cursor: 'pointer'}}>
+                                                    <div className='d-flex' style={{width: 260 / proporcional, height: 'auto', cursor: 'pointer'}}>
                                                         <div className='rounded' style={{width: 15 / proporcional, height: 15 / proporcional, border: '1px solid rgb(229, 229, 229)', 
                                                             marginRight: 24 / proporcional}}/>
-                                                        <div style={{width: 208.5 / proporcional, height: 'auto' / proporcional}}>
-                                                            <div className='d-flex justify-content-between' style={{width: 208.5 / proporcional, height: 'auto' / proporcional}}>
+                                                        <div style={{width: 208.5 / proporcional, height: 'auto'}}>
+                                                            <div className='d-flex justify-content-between' style={{width: 208.5 / proporcional, height: 'auto'}}>
                                                                 <p style={{fontSize: 16 / proporcional, lineHeight: `${19.2 / proporcional}px`, fontWeight: 400, fontFamily: 'Nunito, sans-serif', 
                                                                             color: 'red', textAlign: 'left', marginBottom: 0, cursor: 'default'}}>
                                                                     Problema solucionado
@@ -266,11 +266,11 @@ export default function MenuSuperior({proporcional}) {
                                             <div style={{width: 300 / proporcional, height: 'auto'/ proporcional, background: 'white'}}>
                                                 <div style={{width: 300 / proporcional, height: 'auto'/ proporcional, paddingLeft: 20 / proporcional, paddingRight: 20 / proporcional,
                                                         paddingTop: 13 / proporcional, paddingBottom: 13 / proporcional}}>
-                                                    <div className='d-flex' style={{width: 260 / proporcional, height: 'auto' / proporcional, cursor: 'pointer'}}>
+                                                    <div className='d-flex' style={{width: 260 / proporcional, height: 'auto', cursor: 'pointer'}}>
                                                         <div className='rounded' style={{width: 15 / proporcional, height: 15 / proporcional, border: '1px solid rgb(229, 229, 229)', 
                                                             marginRight: 24 / proporcional}}/>
-                                                        <div style={{width: 208.5 / proporcional, height: 'auto' / proporcional}}>
-                                                            <div className='d-flex justify-content-between' style={{width: 208.5 / proporcional, height: 'auto' / proporcional}}>
+                                                        <div style={{width: 208.5 / proporcional, height: 'auto'}}>
+                                                            <div className='d-flex justify-content-between' style={{width: 208.5 / proporcional, height: 'auto'}}>
                                                                 <p style={{fontSize: 16 / proporcional, lineHeight: `${19.2 / proporcional}px`, fontWeight: 400, fontFamily: 'Nunito, sans-serif', 
                                                                             color: 'red', textAlign: 'left', marginBottom: 0, cursor: 'default'}}>
                                                                     Nuevo usuario
@@ -291,11 +291,11 @@ export default function MenuSuperior({proporcional}) {
                                             <div style={{width: 300 / proporcional, height: 'auto'/ proporcional, background: 'white'}}>
                                                 <div style={{width: 300 / proporcional, height: 'auto'/ proporcional, paddingLeft: 20 / proporcional, paddingRight: 20 / proporcional,
                                                         paddingTop: 13 / proporcional, paddingBottom: 13 / proporcional}}>
-                                                    <div className='d-flex' style={{width: 260 / proporcional, height: 'auto' / proporcional, cursor: 'pointer'}}>
+                                                    <div className='d-flex' style={{width: 260 / proporcional, height: 'auto', cursor: 'pointer'}}>
                                                         <div className='rounded' style={{width: 15 / proporcional, height: 15 / proporcional, border: '1px solid rgb(229, 229, 229)', 
                                                             marginRight: 24 / proporcional}}/>
-                                                        <div style={{width: 208.5 / proporcional, height: 'auto' / proporcional}}>
-                                                            <div className='d-flex justify-content-between' style={{width: 208.5 / proporcional, height: 'auto' / proporcional}}>
+                                                        <div style={{width: 208.5 / proporcional, height: 'auto'}}>
+                                                            <div className='d-flex justify-content-between' style={{width: 208.5 / proporcional, height: 'auto'}}>
                                                                 <p style={{fontSize: 16 / proporcional, lineHeight: `${19.2 / proporcional}px`, fontWeight: 400, fontFamily: 'Nunito, sans-serif', 
                                                                             color: 'red', textAlign: 'left', marginBottom: 0, cursor: 'default'}}>
                                                                     Advertencia de servidor
@@ -316,11 +316,11 @@ export default function MenuSuperior({proporcional}) {
                                             <div style={{width: 300 / proporcional, height: 'auto'/ proporcional, background: 'white'}}>
                                                 <div style={{width: 300 / proporcional, height: 'auto'/ proporcional, paddingLeft: 20 / proporcional, paddingRight: 20 / proporcional,
                                                         paddingTop: 13 / proporcional, paddingBottom: 13 / proporcional}}>
-                                                    <div className='d-flex' style={{width: 260 / proporcional, height: 'auto' / proporcional, cursor: 'pointer'}}>
+                                                    <div className='d-flex' style={{width: 260 / proporcional, height: 'auto', cursor: 'pointer'}}>
                                                         <div className='rounded' style={{width: 15 / proporcional, height: 15 / proporcional, border: '1px solid rgb(229, 229, 229)', 
                                                             marginRight: 24 / proporcional}}/>
-                                                        <div style={{width: 208.5 / proporcional, height: 'auto' / proporcional}}>
-                                                            <div className='d-flex justify-content-between' style={{width: 208.5 / proporcional, height: 'auto' / proporcional}}>
+                                                        <div style={{width: 208.5 / proporcional, height: 'auto'}}>
+                                                            <div className='d-flex justify-content-between' style={{width: 208.5 / proporcional, height: 'auto'}}>
                                                                 <p style={{fontSize: 16 / proporcional, lineHeight: `${19.2 / proporcional}px`, fontWeight: 400, fontFamily: 'Nunito, sans-serif', 
                                                                             color: 'red', textAlign: 'left', marginBottom: 0, cursor: 'default'}}>
                                                                     2 nuevas retroalimentaciones

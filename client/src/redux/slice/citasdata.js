@@ -5,10 +5,11 @@ import { constantes } from "../../uri/constantes"
 const baseurl = `${constantes().url_principal[0].url}`
 let stateType = ''
 
-export const favoritosdata = createAsyncThunk ('', async (params) => {
+export const citasdata = createAsyncThunk ('', async (params) => {
     stateType = params.stateType
     switch (stateType){
-        case 'new_favorito':
+        case 'new_cita':
+        case 'update_cita':
             if (params.reset){ 
                 return {success: false}
             }else{
@@ -19,8 +20,9 @@ export const favoritosdata = createAsyncThunk ('', async (params) => {
                     return err.message
                 }
             }
-        case 'get_favoritos':
-        case 'delete_favorito':
+        case 'get_cita':
+        case 'get_citas_search':
+        case 'delete_cita':
             if (params.reset){ 
                 return {success: false}
             }else{
@@ -44,23 +46,23 @@ const initialState = (type) => {
     }
 }
 
-const dataFavorito = createSlice ({
+const dataCitas = createSlice ({
     name: 'fetch',
     initialState: initialState (stateType),
     extraReducers: (builder) => {
-        builder.addCase (favoritosdata.pending, (state) => {
+        builder.addCase (citasdata.pending, (state) => {
             state.loading = true
         }),
-        builder.addCase (favoritosdata.fulfilled, (state, action) => {
+        builder.addCase (citasdata.fulfilled, (state, action) => {
             state.loading = false
             state.finishWithErrors = false
             state[stateType] = action.payload
         }),
-        builder.addCase (favoritosdata.rejected, (state) => {
+        builder.addCase (citasdata.rejected, (state) => {
             state.loading = false
             state.finishWithErrors = true
         })
     }
 })
 
-export default dataFavorito.reducer
+export default dataCitas.reducer

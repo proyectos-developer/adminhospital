@@ -22,11 +22,11 @@ export default function BarraTitulo({proporcional}) {
                         Hola, bienvenido de nuevo!
                     </h1>
                     <span style={{color: 'rgb(98, 101, 105', fontSize: 15 / proporcional, fontWeight: 400, lineHeight: `${22 / proporcional}px`}}>
-                        {pagina === 'nuevo-doctor' ? 'Agregar nuevo doctor' : pagina === 'doctores' ? 'Doctores' : ''}
+                        {pagina === 'nuevo' ? 'Agregar nuevo doctor' : pagina === 'doctores' ? 'Doctores' : ''}
                     </span>
                 </div>
                 {
-                    pagina === 'nuevo-doctor' ? (
+                    pagina === 'nuevo' ? (
                         <div className='d-flex justify-content-end' style={{width: '70%', height: 50 / proporcional}}>
                             <button className='btn shadow' style={{width: 100 / proporcional, height: 35 / proporcional, background: 'rgb(32, 34, 35)', color: 'rgb(238, 238, 238)',
                                     fontSize: 14 / proporcional, fontWeight: 300}}>

@@ -25,6 +25,7 @@ export const doctoresdata = createAsyncThunk ('', async (params) => {
         case 'get_doctor':
         case 'get_doctores_filtros':
         case 'get_red_doctor':
+        case 'delete_doctor':
             if (params.reset){ 
                 return {success: false}
             }else{

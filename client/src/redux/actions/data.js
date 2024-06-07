@@ -1,11 +1,8 @@
 export const datatypes = {
     SET_AUTHENTICATED: 'SET_AUTENTICATED',
-    SET_OPEN_MENU_MAIN: 'SET_OPEN_MENU_MAIN',
-    SET_DATA_PAGE_RESERVA: 'SET_DATA_PAGE_RESERVA',
-    SET_SCREEN_SEARCH: 'SET_SCREEN_SEARCH',
-    SET_MODAL_FAVORITOS: 'SET_MODAL_FAVORITOS',
-    SET_MODAL_PRODUCTO: 'SET_MODAL_PRODUCTO',
-    SET_MODAL_CARRITO: 'SET_MODAL_CARRITO'
+    SET_OPEN_MENU_LATERAL: 'SET_OPEN_MENU_LATERAL',
+    SET_OPEN_MODAL_NEW_TAREA: 'SET_OPEN_MODAL_NEW_TAREA',
+    SET_OPEN_MODAL_NEW_ESPECIALIDAD: 'SET_OPEN_MODAL_NEW_ESPECIALIDAD'
 }
 
 export const set_authenticated = authenticated => {
@@ -15,44 +12,23 @@ export const set_authenticated = authenticated => {
     }
 }
 
-export const set_open_menu_main = open_menu_main => {
+export const set_open_menu_lateral = open_menu_lateral => {
     return {
-        open_menu_main,
-        type: datatypes.SET_OPEN_MENU_MAIN
+        open_menu_lateral,
+        type: datatypes.SET_OPEN_MENU_LATERAL
     }
 }
 
-export const set_data_page_reserva = data_page_reserva => {
+export const set_open_modal_new_tarea = open_modal_new_tarea => {
     return {
-        data_page_reserva,
-        type: datatypes.SET_DATA_PAGE_RESERVA
+        open_modal_new_tarea,
+        type: datatypes.SET_OPEN_MODAL_NEW_TAREA
     }
 }
 
-export const set_screen_search = screen_search => {
+export const set_open_modal_new_especialidad = open_modal_new_especialidad => {
     return {
-        screen_search,
-        type: datatypes.SET_SCREEN_SEARCH
-    }
-}
-
-export const set_modal_favoritos = modal_favoritos => {
-    return {
-        modal_favoritos,
-        type: datatypes.SET_MODAL_FAVORITOS
-    }
-}
-
-export const set_modal_producto = modal_producto => {
-    return {
-        modal_producto,
-        type: datatypes.SET_MODAL_PRODUCTO
-    }
-}
-
-export const set_modal_carrito = modal_carrito => {
-    return {
-        modal_carrito,
-        type: datatypes.SET_MODAL_CARRITO
+        open_modal_new_especialidad,
+        type: datatypes.SET_OPEN_MODAL_NEW_ESPECIALIDAD
     }
 }

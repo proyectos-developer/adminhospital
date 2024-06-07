@@ -25,6 +25,12 @@ export const doctoresConstants = (id = 0, search = 0, order_by = 0, order = 0, b
             stateType: 'get_doctores_filtros',
             reset: reset,
         },
+        delete_doctor: {
+            path: `delete/doctor/${id}`,
+            stateType: 'delete_doctor',
+            reset: reset,
+            data: data
+        },
         new_red_doctor: {
             path: `red/doctor`,
             stateType: 'new_red_doctor',

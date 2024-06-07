@@ -2,12 +2,9 @@ import {datatypes} from '../actions/data.js'
 
 const initial_state = {
     authenticated: false,
-    open_menu_main: false,
-    data_page_reserva: {nro_adultos: 0, nro_ninios: 0, fecha: '', hora: '', direccion: '', requisitos: ''},
-    screen_search: false,
-    modal_favoritos: false,
-    modal_producto: false,
-    modal_carrito: false,
+    open_menu_lateral: true,
+    open_modal_new_tarea: false,
+    open_modal_new_modalidad: false
 }
 
 const data = (state = initial_state, action) => {
@@ -17,41 +14,23 @@ const data = (state = initial_state, action) => {
             ... state,
             authenticated
         }
-    }else if (action.type === datatypes.SET_OPEN_MENU_MAIN){
-        const open_menu_main = action.open_menu_main
+    }else if (action.type === datatypes.SET_OPEN_MENU_LATERAL){
+        const open_menu_lateral = action.open_menu_lateral
         return {
             ... state,
-            open_menu_main
+            open_menu_lateral
         }
-    }else if (action.type === datatypes.SET_DATA_PAGE_RESERVA){
-        const data_page_reserva = action.data_page_reserva
+    }else if (action.type === datatypes.SET_OPEN_MODAL_NEW_TAREA){
+        const open_modal_new_tarea = action.open_modal_new_tarea
         return {
             ... state,
-            data_page_reserva
+            open_modal_new_tarea
         }
-    }else if (action.type === datatypes.SET_SCREEN_SEARCH){
-        const screen_search = action.screen_search
+    }else if (action.type === datatypes.SET_OPEN_MODAL_NEW_ESPECIALIDAD){
+        const open_modal_new_especialidad = action.open_modal_new_especialidad
         return {
             ... state,
-            screen_search
-        }
-    }else if (action.type === datatypes.SET_MODAL_FAVORITOS){
-        const modal_favoritos = action.modal_favoritos
-        return {
-            ... state,
-            modal_favoritos
-        }
-    }else if (action.type === datatypes.SET_MODAL_PRODUCTO){
-        const modal_producto = action.modal_producto
-        return {
-            ... state,
-            modal_producto
-        }
-    }else if (action.type === datatypes.SET_MODAL_CARRITO){
-        const modal_carrito = action.modal_carrito
-        return {
-            ... state,
-            modal_carrito
+            open_modal_new_especialidad
         }
     }else{
         return state
